@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Hire Rates — Nepal Motorbike Rental Services</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3774/3774270.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,400;1,900&family=Barlow:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link rel="stylesheet" href="/CSS/hirerates.css">
+ <script src="/JS/hirerates.js" defer></script>
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6719220436071788"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="pb"></div>
+  <div class="cursor" id="cur"></div>
+  <div class="cursor-ring" id="crng"></div>
+  <div class="so" id="so" onclick="ts()"></div>
+  <div class="sb" id="sb">
+    <div class="sb-top">
+      <div class="sb-logo">Nepal Motorbike Rental Services</div><button class="cb" onclick="ts()"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="sb-body">
+      <ul class="sb-nav">
+    <li><a href="/index.html"   onclick="toggleSidebar()"><i class="fas fa-home"></i> Home</a></li>
+           
+            <li><a href="/HTML/about.html"   onclick="toggleSidebar()"><i class="fas fa-info-circle"></i> About</a></li>
+          
+            <li><a href="/HTML/hirerates.html"            onclick="toggleSidebar()"><i class="fas fa-tag"></i> Hire Rates</a></li>
+            <li><a href="/HTML/tours.html"            onclick="toggleSidebar()"><i class="fas fa-map-marked-alt"></i> Tours</a></li>
+            <li><a href="/HTML/gallery.html"            onclick="toggleSidebar()"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="/HTML/faqs.html"            onclick="toggleSidebar()"><i class="fas fa-question-circle"></i> FAQs</a></li>
+           
+            <li><a href="/HTML/contact.html" onclick="toggleSidebar()"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+    <div class="sb-soc">
+      <a href="https://www.facebook.com/people/Nepal-Motor-Bike-Tours-Travels/61578549223154/?rdid=8cX7n7ATaDz5udY1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BcRCTuYwh%2F" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/nepalmotorbiketoursandtravels?igsh=bW44N3Rndnk0bmlp"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@nepalmotorbiketourstravels"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@nepal.motorbike.r"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/9779810048404" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+  <header id="hd">
+    <a href="/index.html" class="logo"><i class="fas fa-motorcycle" style="font-size:1.4rem"></i>Nepal Motorbike Rental Services</a>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+          
+            <li><a href="/HTML/about.html">About</a></li>
+           
+            <li><a href="/HTML/hirerates.html">Hire Rates</a></li>
+            <li><a href="/HTML/tours.html">Tours</a></li>
+            <li><a href="/HTML/faqs.html">FAQs</a></li>
+           
+            <li><a href="/HTML/gallery.html">Gallery</a></li>
+            <li><a href="/HTML/contact.html">Contact</a></li>
+      </ul>
+    </ul>
+    <button class="menu-btn" onclick="ts()">
+      <div class="hl">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>MENU
+    </button>
+  </header>
+  <main>
+    <section class="ph">
+      <div class="ph-bg"></div>
+      <div class="ph-c">
+        <div class="bc"><a href="/index.html">Home</a><i class="fas fa-chevron-right"></i>Hire Rates</div>
+        <h1>Bike <em>Hire</em> Rates</h1>
+        <p>Transparent pricing, no hidden fees. Choose your bike, choose your duration, and ride.</p>
+      </div>
+      <div class="fog"></div>
+    </section>
+    <div class="de"></div>
+
+    <!-- Category tabs -->
+    <div class="cat-section rv">
+      <div class="cat-tabs">
+        <button class="ct on" onclick="fc(this,'all')"><i class="fas fa-motorcycle"></i>All Bikes</button>
+        <button class="ct" onclick="fc(this,'sport')"><i class="fas fa-mountain"></i>Sport Bike</button>
+        <button class="ct" onclick="fc(this,'adventure')"><i class="fas fa-route"></i>Adventure</button>
+        <button class="ct" onclick="fc(this,'scrambler')"><i class="fas fa-route"></i>Scrambler</button>
+        <button class="ct" onclick="fc(this,'crusier')"><i class="fas fa-tree"></i>Crusier</button>
+        <button class="ct" onclick="fc(this,'scooters')"><i class="fas fa-tree"></i>Scooters</button>
+      </div>
+    </div>
+
+    <!-- Rates -->
+    <section class="rates-section">
+      <div class="rates-intro rv">
+        <div class="stag">Our Fleet</div>
+        <h2>Choose Your <span>Machine</span></h2>
+        <p>All rates are in Nepalese Rupees (NPR) per day. Multi-day and weekly discounts automatically applied.
+          Security deposit required — returned in full upon safe return.</p>
+      </div>
+      <div class="bike-grid" id="bikeGrid">
+
+        <div class="bike-card rv" data-cat="crusier">
+          <img class="bike-img" src="/Images/bullet 400.jpg"
+            alt="Bullet Classic ">
+          <div class="bike-tag pop">Most Popular</div>
+          <div class="bike-body">
+            <div class="bike-name">Royal Enfiend (Bullet)  </div>
+            <div class="bike-sub"> Classic • 350cc</div>
+            <div class="bike-specs">
+              <span class="bike-spec"><i class="fas fa-tachometer-alt"></i>30 HP</span>
+              <span class="bike-spec"><i class="fas fa-gas-pump"></i>13.5L</span>
+              <span class="bike-spec"><i class="fas fa-weight-hanging"></i>196 kg</span>
+            </div>
+            <table class="rate-table">
+              <tr>
+                <th>Duration</th>
+                <th>Rate</th>
+              </tr>
+              <tr>
+                <td>Per Day</td>
+                <td class="price">NPR 4,000</td>
+                </tr>
+            </table>
+         <a href="https://wa.me/9779810048404?text=I%20want%20to%20book%20Royal%20Enfield%20Classic%20Bike%20350cc%20for%20rent.%20Price:%20NPR%204000/day" target="_blank"
+  Book This Bike  class="book-btn"><i class="fas fa-calendar-check"></i>Book This Bike</a>
+
+          </div>
+        </div>
+
+        <div class="bike-card rv" data-cat="scrambler">
+          <img class="bike-img" src="/Images/scram.jpg"
+            alt="Royal Enfield Scrambler">
+          <div class="bike-tag">Best Value</div>
+          <div class="bike-body">
+            <div class="bike-name">Royal Enfield Scram</div>
+            <div class="bike-sub">Dual-Sport Enduro • 411cc</div>
+            <div class="bike-specs">
+              <span class="bike-spec"><i class="fas fa-tachometer-alt"></i>25.4 HP</span>
+              <span class="bike-spec"><i class="fas fa-gas-pump"></i>15L</span>
+              <span class="bike-spec"><i class="fas fa-weight-hanging"></i>196 kg</span>
+            </div>
+            <table class="rate-table">
+              <tr>
+                <th>Duration</th>
+                <th>Rate</th>
+              </tr>
+              <tr>
+                <td>Per Day</td>
+                <td class="price">NPR 6,500</td>
+              </tr>
+             
+            </table>
+        <a href="https://wa.me/9779810048404?text=I%20want%20to%20book%20Royal%20Enfield%20Scrambler%20Bike%20410cc%20for%20rent.%20Price:%20NPR%206500/day" target="_blank"
+  Book This Bike  class="book-btn"><i class="fas fa-calendar-check"></i>Book This Bike</a>
+
+          </div>
+        </div>
+
+        <div class="bike-card rv" data-cat="trail">
+          <img class="bike-img" src="/Images/xpulse.png"
+            alt="Xpulse">
+          <div class="bike-tag">Trail Expert</div>
+          <div class="bike-body">
+            <div class="bike-name">Xpulse </div>
+            <div class="bike-sub">Trail Bike • 250cc</div>
+            <div class="bike-specs">
+              <span class="bike-spec"><i class="fas fa-tachometer-alt"></i>19 HP</span>
+              <span class="bike-spec"><i class="fas fa-gas-pump"></i>13L</span>
+              <span class="bike-spec"><i class="fas fa-weight-hanging"></i>161 kg</span>
+            </div>
+            <table class="rate-table">
+              <tr>
+                <th>Duration</th>
+                <th>Rate</th>
+              </tr>
+              <tr>
+                <td>Per Day</td>
+                <td class="price">NPR 4,000</td>
+              </tr>
+             
+            </table>
+            <a href="https://wa.me/9779810048404?text=I%20want%20to%20book%20Honda%20Xpulse%20250cc%20for%20rent.%20Price:%20NPR%204000/day" target="_blank"
+  Book This Bike  class="book-btn"><i class="fas fa-calendar-check"></i>Book This Bike</a>
+
+          </div>
+        </div>
+
+        <div class="bike-card rv" data-cat="adventure">
+          <img class="bike-img" src="/Images/himalayan.jpg"
+            alt="Royal Enfield Himalayan">
+          <div class="bike-tag">Pro Rider</div>
+          <div class="bike-body">
+            <div class="bike-name">Royal Enfield Himalayan</div>
+            <div class="bike-sub">Off-Road | Adventure bike • 411cc</div>
+            <div class="bike-specs">
+              <span class="bike-spec"><i class="fas fa-tachometer-alt"></i>24.5 BHP</span>
+              <span class="bike-spec"><i class="fas fa-gas-pump"></i>15L</span>
+              <span class="bike-spec"><i class="fas fa-weight-hanging"></i>199 kg</span>
+            </div>
+            <table class="rate-table">
+              <tr>
+                <th>Duration</th>
+                <th>Rate</th>
+              </tr>
+              <tr>
+                <td>Per Day</td>
+                <td class="price">NPR 8,500</td>
+              </tr>
+             
+            </table>
+          <a href="https://wa.me/9779810048404?text=I%20want%20to%20book%20Royal%20Enfield%20Himalayan%20Bike%20410cc%20for%20rent.%20Price:%20NPR%208500/day" target="_blank"
+  Book This Bike  class="book-btn"><i class="fas fa-calendar-check"></i>Book This Bike</a>
+
+          </div>
+        </div>
+
+        <div class="bike-card rv" data-cat="adventure">
+          <img class="bike-img" src="/Images/XR.jpg"
+            alt="Honda XR">
+          <div class="bike-tag">Adventure</div>
+          <div class="bike-body">
+            <div class="bike-name">Honda XR</div>
+            <div class="bike-sub">Adventure Trail • 190cc</div>
+            <div class="bike-specs">
+              <span class="bike-spec"><i class="fas fa-tachometer-alt"></i>15.6 HP</span>
+              <span class="bike-spec"><i class="fas fa-gas-pump"></i>12L</span>
+              <span class="bike-spec"><i class="fas fa-weight-hanging"></i>123 kg</span>
+            </div>
+            <table class="rate-table">
+              <tr>
+                <th>Duration</th>
+                <th>Rate</th>
+              </tr>
+              <tr>
+                <td>Per Day</td>
+                <td class="price">NPR 5,000</td>
+              </tr>
+              
+            </table>
+           <a href="https://wa.me/9779810048404?text=I%20want%20to%20book%20Honda%20XR%20Bike%20190cc%20for%20rent.%20Price:%20NPR%205000/day" target="_blank"
+  Book This Bike  class="book-btn"><i class="fas fa-calendar-check"></i>Book This Bike</a>
+
+          </div>
+        </div>
+
+
+          <div class="bike-card rv" data-cat="sport">
+          <img class="bike-img" src="/Images/fzs.jpg"
+            alt="Yamaha Fz">
+          <div class="bike-tag">Beginner Friendly</div>
+          <div class="bike-body">
+            <div class="bike-name">Yamaha Fz</div>
+            <div class="bike-sub">Sport Bike • cc</div>
+            <div class="bike-specs">
+              <span class="bike-spec"><i class="fas fa-tachometer-alt"></i>15.6 HP</span>
+              <span class="bike-spec"><i class="fas fa-gas-pump"></i>12L</span>
+              <span class="bike-spec"><i class="fas fa-weight-hanging"></i>123 kg</span>
+            </div>
+            <table class="rate-table">
+              <tr>
+                <th>Duration</th>
+                <th>Rate</th>
+              </tr>
+              <tr>
+                <td>Per Day</td>
+                <td class="price">NPR 2,000</td>
+              </tr>
+             
+            </table>
+           <a href="https://wa.me/9779810048404?text=I%20want%20to%20book%20Yamaha%20FZ%20cc%20for%20rent%20Price:%20NPR%202000/day" target="_blank"
+  Book This Bike  class="book-btn"><i class="fas fa-calendar-check"></i>Book This Bike</a>
+
+          </div>
+        </div>
+
+
+        <div class="bike-card rv" data-cat="sport">
+          <img class="bike-img" src="/Images/duke200.png"
+            alt="Duke 200">
+          <div class="bike-tag">Naked / Sport</div>
+          <div class="bike-body">
+            <div class="bike-name">Duke </div>
+            <div class="bike-sub">Sport / Naked • 200cc</div>
+            <div class="bike-specs">
+              <span class="bike-spec"><i class="fas fa-tachometer-alt"></i>25 HP</span>
+              <span class="bike-spec"><i class="fas fa-gas-pump"></i>13.4L</span>
+              <span class="bike-spec"><i class="fas fa-weight-hanging"></i>159 kg</span>
+            </div>
+            <table class="rate-table">
+              <tr>
+                <th>Duration</th>
+                <th>Rate</th>
+              </tr>
+              <tr>
+                <td>Per Day</td>
+                <td class="price">NPR 4,000</td>
+              </tr>
+             
+            </table>
+            <a href="https://wa.me/9779810048404?text=I%20want%20to%20book%20KTM%20Duke%20200cc%20for%20rent.%20Price:%20NPR%204000/day" target="_blank"
+  Book This Bike  class="book-btn"><i class="fas fa-calendar-check"></i>Book This Bike</a>
+
+          </div>
+        </div>
+
+
+         <div class="bike-card rv" data-cat="sport" >
+          <img class="bike-img" src="/Images/dominar.png"
+            alt="Duke 200">
+          <div class="bike-tag">Advenrture-Sport</div>
+          <div class="bike-body">
+            <div class="bike-name">Dominar </div>
+            <div class="bike-sub">Adventure Tourer - Sports Tourer • 400cc</div>
+            <div class="bike-specs">
+              <span class="bike-spec"><i class="fas fa-tachometer-alt"></i>40 HP</span>
+              <span class="bike-spec"><i class="fas fa-gas-pump"></i>13L</span>
+              <span class="bike-spec"><i class="fas fa-weight-hanging"></i>190 kg</span>
+            </div>
+            <table class="rate-table">
+              <tr>
+                <th>Duration</th>
+                <th>Rate</th>
+              </tr>
+              <tr>
+                <td>Per Day</td>
+                <td class="price">NPR 6,000</td>
+              </tr>
+             
+            </table>
+            <a href="https://wa.me/9779810048404?text=I%20want%20to%20book%20Bajaj%20Dominar%20400cc%20for%20rent.%20Price:%20NPR%206000/day" target="_blank"
+  Book This Bike  class="book-btn"><i class="fas fa-calendar-check"></i>Book This Bike</a>
+
+          </div>
+        </div>
+
+         <div class="bike-card rv" data-cat="sport">
+          <img class="bike-img" src="/Images/ns200.png"
+            alt="Duke 200">
+          <div class="bike-tag">Naked-Sport</div>
+          <div class="bike-body">
+            <div class="bike-name">NS </div>
+            <div class="bike-sub">Sport / Naked • 200cc</div>
+            <div class="bike-specs">
+              <span class="bike-spec"><i class="fas fa-tachometer-alt"></i>24 HP</span>
+              <span class="bike-spec"><i class="fas fa-gas-pump"></i>12L</span>
+              <span class="bike-spec"><i class="fas fa-weight-hanging"></i>158 kg</span>
+            </div>
+            <table class="rate-table">
+              <tr>
+                <th>Duration</th>
+                <th>Rate</th>
+              </tr>
+              <tr>
+                <td>Per Day</td>
+                <td class="price">NPR 2,500</td>
+              </tr>
+             
+            </table>
+            <a href="https://wa.me/9779810048404?text=I%20want%20to%20book%20NS%20200cc%20for%20rent.%20Price:%20NPR%202500/day" target="_blank"
+  Book This Bike  class="book-btn"><i class="fas fa-calendar-check"></i>Book This Bike</a>
+
+          </div>
+        </div>
+
+
+        
+
+        <div class="bike-card rv" data-cat="sport">
+          <img class="bike-img" src="/Images/pulsar220.jpg"
+            alt="pulsar220">
+          <div class="bike-tag">New Fleet</div>
+          <div class="bike-body">
+            <div class="bike-name">Pulasr 220</div>
+            <div class="bike-sub">Street Enduro • 220cc</div>
+            <div class="bike-specs">
+              <span class="bike-spec"><i class="fas fa-tachometer-alt"></i>21 HP</span>
+              <span class="bike-spec"><i class="fas fa-gas-pump"></i>15L</span>
+              <span class="bike-spec"><i class="fas fa-weight-hanging"></i>160 kg</span>
+            </div>
+            <table class="rate-table">
+              <tr>
+                <th>Duration</th>
+                <th>Rate</th>
+              </tr>
+              <tr>
+                <td>Per Day</td>
+                <td class="price">NPR 2,500</td>
+              </tr>
+              
+            </table>
+            <a href="https://wa.me/9779810048404?text=I%20want%20to%20book%20Pulsar%20Bike%20220cc%20for%20rent.%20Price:%20NPR%202500/day" target="_blank"
+  Book This Bike  class="book-btn"><i class="fas fa-calendar-check"></i>Book This Bike</a>
+
+          </div>
+        </div>
+
+        <div class="bike-card rv" data-cat="scooters">
+          <img class="bike-img" src="/Images/ntorq.jpg"
+            alt="ntorq">
+          <div class="bike-tag">New Fleet</div>
+          <div class="bike-body">
+            <div class="bike-name">Ntorq</div>
+            <div class="bike-sub">Ready To Race • 125cc</div>
+            <div class="bike-specs">
+              <span class="bike-spec"><i class="fas fa-tachometer-alt"></i>9.5 HP</span>
+              <span class="bike-spec"><i class="fas fa-gas-pump"></i>5L</span>
+              <span class="bike-spec"><i class="fas fa-weight-hanging"></i>118 kg</span>
+            </div>
+            <table class="rate-table">
+              <tr>
+                <th>Duration</th>
+                <th>Rate</th>
+              </tr>
+              <tr>
+                <td>Per Day</td>
+                <td class="price">NPR 1,800</td>
+              </tr>
+              
+            </table>
+            <a href="https://wa.me/9779810048404?text=I%20want%20to%20book%20Ntorq%20Scooter%20125cc%20for%20rent.%20Price:%20NPR%201800/day" target="_blank"
+  Book This Bike  class="book-btn"><i class="fas fa-calendar-check"></i>Book This Bike</a>
+            
+          </div>
+        </div>
+
+
+           <div class="bike-card rv" data-cat="scooters">
+          <img class="bike-img" src="/Images/Dio.jpeg"
+            alt="Dio">
+          <div class="bike-tag">Most Common</div>
+          <div class="bike-body">
+            <div class="bike-name">Dio</div>
+            <div class="bike-sub">Let's Begin • 110cc</div>
+            <div class="bike-specs">
+              <span class="bike-spec"><i class="fas fa-tachometer-alt"></i>7.8 HP</span>
+              <span class="bike-spec"><i class="fas fa-gas-pump"></i>5.3L</span>
+              <span class="bike-spec"><i class="fas fa-weight-hanging"></i>106 kg</span>
+            </div>
+            <table class="rate-table">
+              <tr>
+                <th>Duration</th>
+                <th>Rate</th>
+              </tr>
+              <tr>
+                <td>Per Day</td>
+                <td class="price">NPR 1,500</td>
+              </tr>
+              
+            </table>
+<a href="https://wa.me/9779810048404?text=I%20want%20to%20book%20Dio%20Scooter%20110cc%20for%20rent.%20Price:%20NPR%201500/day"      target="_blank"
+  Book This Bike  class="book-btn"><i class="fas fa-calendar-check"></i>Book This Bike</a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- What's included -->
+    <section class="inc-section">
+      <div class="stag rv" style="justify-content:center">What's Included</div>
+      <h2 class="rv"
+        style="font-family:'Bebas Neue',cursive;font-size:clamp(2.5rem,5vw,4rem);letter-spacing:2px;text-align:center;">
+        Every Hire <span style="color:var(--fire)">Includes</span></h2>
+      <div class="inc-grid">
+        <div class="inc-card rv">
+          <div class="inc-icon"><i class="fas fa-shield-alt"></i></div>
+          <h4>Full Insurance</h4>
+          <p>Third-party liability insurance included on all hire packages.</p>
+        </div>
+        <div class="inc-card rv">
+          <div class="inc-icon"><i class="fas fa-hard-hat"></i></div>
+          <h4>Helmet</h4>
+          <p>Quality helmet are provided at no extra cost.</p>
+        </div>
+        <div class="inc-card rv">
+          <div class="inc-icon"><i class="fas fa-wrench"></i></div>
+          <h4>Roadside Support</h4>
+          <p>24/7 phone support and roadside assistance across Nepal.</p>
+        </div>
+        <div class="inc-card rv">
+          <div class="inc-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <h4>Route Maps</h4>
+          <p>Digital and paper route maps for all major trails included.</p>
+        </div>
+        <div class="inc-card rv no">
+          <div class="inc-icon"><i class="fas fa-gas-pump"></i></div>
+          <h4>Fuel — Not Included</h4>
+          <p>Fuel is not included. </p>
+        </div>
+        <div class="inc-card rv no">
+          <div class="inc-icon"><i class="fas fa-user-shield"></i></div>
+          <h4>Guide — Optional</h4>
+          <p>Add a local guide from NPR 2,500/day. Highly recommended for off-road.</p>
+        </div>
+        <div class="inc-card rv no">
+          <div class="inc-icon"><i class="fas fa-luggage-cart"></i></div>
+          <h4>Panniers — Optional</h4>
+          <p>Waterproof pannier sets available for NPR 500/day extra.</p>
+        </div>
+        <div class="inc-card rv">
+          <div class="inc-icon"><i class="fas fa-sync-alt"></i></div>
+          <h4>Free Swap</h4>
+          <p>Mechanical issue? We'll swap your bike at no charge within Kathmandu.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Policy + FAQ -->
+    <section class="policy-section">
+      <div class="policy-grid">
+        <div class="policy-left rv">
+          <div class="stag">Hire Policy</div>
+          <h2>Rates &amp; <span>Rules</span></h2>
+          <p>Before you book, please read our hire policies. We keep things simple and fair.</p>
+          <ul class="policy-list">
+            <li><i class="fas fa-check-circle"></i>Valid driving license (Nepal or IDP) required</li>
+            <li><i class="fas fa-check-circle"></i>Minimum age: 18 years</li>
+            <li><i class="fas fa-check-circle"></i>Security deposit: NPR 10,000–20,000 (refundable)</li>
+            <li><i class="fas fa-check-circle"></i>Fuel at your own expense.</li>
+            <li><i class="fas fa-check-circle"></i>Damage assessed on return — fair market rate charged</li>
+            <li><i class="fas fa-check-circle"></i>24-hour cancellation for full refund</li>
+            <li><i class="fas fa-check-circle"></i>Late return: Amount will be changed according to the delay</li>
+            <li><i class="fas fa-check-circle"></i>Off-road riding permitted — rider assumes trail risk</li>
+          </ul>
+        </div>
+        <div class="rv">
+          <div class="stag">FAQs</div>
+          <div class="faq-list">
+            <div class="faq-item"><button class="faq-q" onclick="faq(this)">Do I need a Nepal driving license?<i
+                  class="fas fa-chevron-down"></i></button>
+              <div class="faq-a">
+                <p>No. We accept International Driving Permits (IDP) and most national motorcycle licenses. Your license
+                  must cover motorcycles above 125cc for larger bikes.</p>
+              </div>
+            </div>
+            <div class="faq-item"><button class="faq-q" onclick="faq(this)">How do I pay the deposit?<i
+                  class="fas fa-chevron-down"></i></button>
+              <div class="faq-a">
+                <p>Security deposits are paid in cash (NPR) or via eSewa/Khalti. The full deposit is returned
+                  immediately upon safe return of the bike and equipment.</p>
+              </div>
+            </div>
+            <div class="faq-item"><button class="faq-q" onclick="faq(this)">Can I take the bike outside Nepal?<i
+                  class="fas fa-chevron-down"></i></button>
+              <div class="faq-a">
+                <p>No. Our hire bikes are licensed for Nepal only. Cross-border riding is not permitted under our
+                  insurance or vehicle registration.</p>
+              </div>
+            </div>
+            <div class="faq-item"><button class="faq-q" onclick="faq(this)">What happens if the bike breaks down?<i
+                  class="fas fa-chevron-down"></i></button>
+              <div class="faq-a">
+                <p>Call our 24/7 support line. If it's a mechanical failure (not accident damage), we'll send a
+                  replacement or technician at no cost to you.</p>
+              </div>
+            </div>
+            <div class="faq-item"><button class="faq-q" onclick="faq(this)">Is gear provided for multi-day rides?<i
+                  class="fas fa-chevron-down"></i></button>
+              <div class="faq-a">
+                <p>All hires include helmet and gloves. Full riding gear (jacket, pants, boots) can be rented
+                  separately. Ask at booking.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta">
+      <div>
+        <h2>Ready to Book?</h2>
+        <p>Contact us to reserve your bike or ask any questions.</p>
+      </div><a href="/HTML/contact.html" class="bw"><i class="fas fa-calendar-check"></i>Book Now</a>
+    </div>
+  </main>
+  <footer>
+    <div class="fg">
+      <div class="fb rv"><a href="/index.html" class="logo"><i class="fas fa-motorcycle"
+            style="font-size:1.4rem"></i>Nepal Motorbike Rental Services </a>
+        <p>Nepal's premier dirtbike hire and adventure tour company.</p>
+        <div class="fso"><a href="https://www.facebook.com/people/Nepal-Motor-Bike-Tours-Travels/61578549223154/?rdid=8cX7n7ATaDz5udY1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BcRCTuYwh%2F" target="_blank" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nepalmotorbiketoursandtravels?igsh=bW44N3Rndnk0bmlp" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@nepalmotorbiketourstravels"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/9779810048404" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+      </div>
+      <div class="fc rv">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="/index.html"><i class="fas fa-chevron-right"></i>Home</a></li>
+          <li><a href="/HTML/about.html"><i class="fas fa-chevron-right"></i>About</a></li>
+          <li><a href="/HTML/tours.html"><i class="fas fa-chevron-right"></i>Tours</a></li>
+          <li><a href="/HTML/gallery.html"><i class="fas fa-chevron-right"></i>Gallery</a></li>
+         
+        </ul>
+      </div>
+      <div class="fc rv">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="/HTML/hirerates.html"><i class="fas fa-chevron-right"></i>Bike Hire</a></li>
+          <li><a href="/HTML/tours.html"><i class="fas fa-chevron-right"></i>Guided Tours</a></li>
+          <li><a href="/HTML/contact.html"><i class="fas fa-chevron-right"></i>Contact</a></li>
+        </ul>
+      </div>
+      <div class="fc rv">
+        <h5>Contact</h5>
+       <div class="fci"><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/pErbHbFP9mcxVrda9"><span>Thamel, Kathmandu, Nepal</span> </a></div>
+       
+ 
+        <div class="footer-contact-item">
+               <div class="fci"><i class="fas fa-phone-alt"></i><a href="tel:+977 9810048404"><span>+977 9810048404</span></a>  <a href="tel: +977 9746420648"><span> +977 9746420648</span></a></div>
+            </div>
+
+        <div class="fci"><i class="fas fa-envelope"></i><span>nepalmotorbiketoursandtravels@gmail.com</span></div>
+      </div>
+    </div>
+    <div class="fb2">
+      <p>© 2026 Nepal Motorbike Rental Services. All rights reserved.</p>
+      <div class="fb2l"><a href="/HTML/PrivacyPolicy.html">Privacy</a><a href="/HTML/TermsConditions.html">Terms & Conditions</a></div>
+    </div>
+  </footer>
+ 
+</body>
+
+</html>

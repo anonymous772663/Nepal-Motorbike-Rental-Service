@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepal Motorbike Rental — Nepal's Elite Ride</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3774/3774270.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,400;1,900&family=Barlow:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">    
+    <link rel="stylesheet" href="/CSS/index.css">
+    <style>
+        .tour-card-img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+     <script src="/JS/style.js" defer></script>
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6719220436071788"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="progress-bar"></div>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <div class="sidebar-overlay" id="overlay" onclick="toggleSidebar()"></div>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+            <div class="sidebar-logo">Nepal Motorbike Rental Services</div>
+            <div class="close-btn" onclick="toggleSidebar()"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="sidebar-body">
+            <ul class="sidebar-nav">
+                <li><a href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+      
+                <li><a href="/HTML/about.html"><i class="fas fa-info-circle"></i> About</a></li>
+               
+                <li><a href="/HTML/hirerates.html"><i class="fas fa-tag"></i> Hire Rates</a></li>
+                <li><a href="/HTML/tours.html"><i class="fas fa-map-marked-alt"></i> Tours</a></li>
+                <li><a href="/HTML/gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="/HTML/faqs.html"><i class="fas fa-question-circle"></i> FAQs</a></li>
+              
+                <li><a href="/HTML/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-socials">
+            <a href="https://www.facebook.com/people/Nepal-Motor-Bike-Tours-Travels/61578549223154/?rdid=8cX7n7ATaDz5udY1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BcRCTuYwh%2F" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nepalmotorbiketoursandtravels?igsh=bW44N3Rndnk0bmlp"> <i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@nepalmotorbiketourstravels" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@nepal.motorbike.r"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/9779810048404" target="_blank"><i class="fab fa-whatsapp"></i></a>
+       
+        </div>
+    </div>
+
+    <header id="header">
+        <a href="/index.html" class="logo"><i class="fas fa-motorcycle logo-icon"></i> Nepal Motorbike Rental  </a>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+     
+            <li><a href="/HTML/about.html">About</a></li>
+   
+            <li><a href="/HTML/hirerates.html">Hire Rates</a></li>
+            <li><a href="/HTML/tours.html">Tours</a></li>
+            <li><a href="/HTML/faqs.html">FAQs</a></li>
+           
+            <li><a href="/HTML/gallery.html">Gallery</a></li>
+            <li><a href="/HTML/contact.html">Contact</a></li>
+        </ul>
+        <button class="menu-btn" onclick="toggleSidebar()">
+            <div class="hamburger-lines">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            MENU
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-bg hero-bg-1" id="heroBg1"></div>
+            <div class="hero-bg hero-bg-2" id="heroBg2"></div>
+            <div class="hero-noise"></div>
+            <div class="hero-content">
+                <div class="hero-badge"><i class="fas fa-circle"></i> Explore Nepal on Two Wheels</div>
+                <h1>Ride the<br><em>Untamed</em><br>Roads of Nepal</h1>
+                <p>Unmatched power, precision, and performance across Nepal's most breathtaking terrain. Hire, tour, or
+                    conquer.</p>
+                <div class="hero-btns">
+                    <a href="/HTML/tours.html" class="btn-primary"><i class="fas fa-compass"></i> Explore Tours</a>
+                    <a href="/HTML/hirerates.html" class="btn-ghost"><i class="fas fa-motorcycle"></i> Hire a Vehicle</a>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <div class="scroll-line"></div> Scroll to discover
+            </div>
+            <div class="fog-edge"></div>
+        </section>
+
+        <div class="dirt-edge-dark"></div>
+
+        <section class="stats-section">
+            <div class="stats-inner">
+                <div class="stat-item reveal">
+                    <div class="stat-num">25<span style="color:var(--amber)">+</span></div>
+                    <div class="stat-label">Bikes in Fleet</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-num">100<span style="color:var(--amber)">+</span></div>
+                    <div class="stat-label">Adventure Tours Completed</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-num">1K<span style="color:var(--amber)">+</span></div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rally-section" id="about">
+            <div class="rally-grid">
+                <div class="rally-left reveal">
+                    <div class="section-tag">Rider Journey</div>
+                    <h2>Ride Smart.<br><em>Ride Bold.</em><br>Ride Together.</h2>
+                    <p>We are Nepal's trusted motor adventure network, offering a wide range of vehicles for every
+                        journey. From rugged mountain trails to smooth city roads, our fleet and expert team ensure a
+                        safe, reliable, and unforgettable experience every kilometre of the way.</p>
+                    <a href="/HTML/gallery.html" class="btn-primary" style="text-decoration:none;display:inline-flex;">View
+                        Gallery <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="steps-grid reveal">
+                    <div class="step-card">
+                        <div class="step-num">01</div>
+                        <div class="step-dot"></div>
+                        <h4>Register & Join</h4>
+                        <p>Sign up and become part of our growing community of riders and drivers.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">02</div>
+                        <div class="step-dot"></div>
+                        <h4>Choose Your Vehicle</h4>
+                        <p>Select from our wide range of bikes, scooters, and cars for every need.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">03</div>
+                        <div class="step-dot"></div>
+                        <h4>Plan Your Journey</h4>
+                        <p>Get expert guidance to choose the best routes and travel plans.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">04</div>
+                        <div class="step-dot"></div>
+                        <h4>Ride or Drive</h4>
+                        <p>Start your journey with full support, guidance, and safety assurance.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">05</div>
+                        <div class="step-dot"></div>
+                        <h4>Safety Briefing</h4>
+                        <p>Receive essential safety instructions before every trip.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">06</div>
+                        <div class="step-dot"></div>
+                        <h4>Return & Review</h4>
+                        <p>Return your vehicle and share your experience with us.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">07</div>
+                        <div class="step-dot"></div>
+                        <h4>Share Your Journey</h4>
+                        <p>Capture your moments and inspire others by sharing your adventure.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">08</div>
+                        <div class="step-dot"></div>
+                        <h4>Earn & Grow</h4>
+                        <p>Enjoy rewards, offers, and loyalty benefits as you travel more with us.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-stripe"></div>
+
+        <section class="why-section" id="hirerates">
+            <div class="why-top reveal">
+                <div>
+                    <div class="section-tag">Why Choose Us</div>
+                    <h2>The <span>Ultimate</span><br>Ride Experience</h2>
+                </div>
+                <p>Eight reasons riders across Nepal and beyond choose us every single time.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fas fa-tools"></i></div>
+                    <h4>Repair & Maintenance Service</h4>
+                    <p>On-site workshop with quick and professional handling of any issues.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fas fa-tags"></i></div>
+                    <h4>Reasonable Pricing</h4>
+                    <p>Competitive rates with complete transparency and no hidden charges.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fas fa-user-cog"></i></div>
+                    <h4>Expert Technicians</h4>
+                    <p>Certified professionals with years of hands-on experience in vehicle care.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fas fa-route"></i></div>
+                    <h4>Custom Travel Plans</h4>
+                    <p>Personalized routes and travel options based on your needs and preferences.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fas fa-check-shield"></i></div>
+                    <h4>Well-Maintained Vehicles</h4>
+                    <p>All vehicles are regularly inspected, serviced, and kept road-ready.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fas fa-truck"></i></div>
+                    <h4>Pick-up & Drop-off Service</h4>
+                    <p>Convenient delivery and return options across Kathmandu Valley.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fas fa-motorcycle"></i></div>
+                    <h4>Wide Range of Vehicles</h4>
+                    <p>Cars, bikes, scooters, and more to suit every type of journey.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fas fa-map-signs"></i></div>
+                    <h4>Guided Travel Options</h4>
+                    <p>Experienced local guides to ensure safe and smooth journeys.</p>
+                </div>
+            </div>
+            <div class="hire-cta-wrap reveal">
+                <p>Ready to pick your vehicle? Browse our full fleet with pricing.</p>
+                <a href="/HTML/hirerates.html" class="btn-primary" style="text-decoration:none;"><i class="fas fa-motorcycle"></i>
+                    View All Vehicles & Rates</a>
+            </div>
+        </section>
+
+        <section class="tours-section" id="tours">
+            <div class="tours-header reveal">
+                <div>
+                    <div class="section-tag">Featured Routes</div>
+                    <h2>Legendary<br>Nepal Journeys</h2>
+                </div>
+                <a href="/HTML/tours.html" class="btn-ghost" style="text-decoration:none;">Explore All Tours <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="tours-grid reveal">
+                <div class="tour-card" onclick="window.location='/HTML/tours.html'">
+                    <img src="https://wallpaperaccess.com/full/4401237.jpg"
+                        alt="Fewa Taal 'Pokhara'" class="tour-card-img">
+                    <div class="tour-card-info">
+                        <div class="tour-tag"><i class="fas fa-mountain"></i> </div>
+                        <h3>Fewa Taal<br>Pokhara</h3>
+                    </div>
+                    <div class="tour-card-hover"><i class="fas fa-arrow-right"></i></div>
+                </div>
+                <div class="tour-card" onclick="window.location='/HTML/tours.html'">
+                    <img src="https://images.pexels.com/photos/29053908/pexels-photo-29053908/free-photo-of-breathtaking-landscape-of-lo-manthang-nepal.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Mustang Trail"
+                        class="tour-card-img">
+                    <div class="tour-card-info">
+                        <div class="tour-tag"><i class="fas fa-wind"></i> </div>
+                        <h3>Upper Mustang</h3>
+                    </div>
+                    <div class="tour-card-hover"><i class="fas fa-arrow-right"></i></div>
+                </div>
+                <div class="tour-card" onclick="window.location='/HTML/tours.html'">
+                    <img src="https://wallpapercave.com/wp/wp11844544.jpg" alt="Everest Base"
+                        class="tour-card-img">
+                    <div class="tour-card-info">
+                        <div class="tour-tag"><i class="fas fa-flag"></i> </div>
+                        <h3>Lumbini<br></h3>
+                    </div>
+                    <div class="tour-card-hover"><i class="fas fa-arrow-right"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="test-glow"></div>
+            <div style="text-align:center; margin-bottom: 20px;" class="reveal">
+                <div class="section-tag" style="justify-content:center;">Customer Reviews</div>
+                <h2 style="font-family:'Bebas Neue',cursive; font-size:clamp(2.5rem,5vw,4rem); letter-spacing:2px;">What
+                    Our <span style="color:var(--fire)">Customers Say</span></h2>
+            </div>
+            <div class="test-grid">
+                <div class="test-card reveal">
+                    <div class="quote-mark">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p>The Annapurna circuit ride was an absolute dream. The bike was in perfect condition and the guide
+                        knew every single trail shortcut.</p>
+                    <div class="test-author">
+                        <div class="test-avatar">RK</div>
+                        <div>
+                            <div class="test-name">Ramesh Karki</div>
+                            <div class="test-role">Kathmandu, Nepal</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-card reveal">
+                    <div class="quote-mark">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p>Rented for 5 days through Upper Mustang. The pickup service was seamless, rates were honest, and
+                        the bike never missed a beat.</p>
+                    <div class="test-author">
+                        <div class="test-avatar">SP</div>
+                        <div>
+                            <div class="test-name">Sita Pradhan</div>
+                            <div class="test-role">Pokhara, Nepal</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-card reveal">
+                    <div class="quote-mark">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p>Best motorbike rental in Nepal without question. I've tried six other operators — none come close
+                        to Nepal Motorbike quality and service.</p>
+                    <div class="test-author">
+                        <div class="test-avatar">AM</div>
+                        <div>
+                            <div class="test-name">Alex Müller</div>
+                            <div class="test-role">Munich, Germany</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-band">
+            <div>
+                <h2>Start Your Journey Today</h2>
+                <p>Reserve your preferred vehicle or tour in just a few clicks.</p>
+            </div>
+            <a href="/HTML/contact.html" class="btn-white"><i class="fas fa-phone-alt"></i> 
+                Contact Us Now</a>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-brand reveal">
+                <a href="/index.html" class="logo"><i class="fas fa-motorcycle logo-icon"></i> Nepal Motorbike Rental Service
+                    </a>
+                <p>Nepal's trusted vehicle rental and adventure tour company. Providing reliable bikes, cars, and guided
+                    experiences across Nepal since 2015.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/people/Nepal-Motor-Bike-Tours-Travels/61578549223154/?rdid=8cX7n7ATaDz5udY1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BcRCTuYwh%2F" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nepalmotorbiketoursandtravels?igsh=bW44N3Rndnk0bmlp" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@nepalmotorbiketourstravels" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@nepal.motorbike.r" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/9779810048404" target="_blank"  title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="viber://chat?number=%2B9779810048404" target="_blank" title="Viber"><i class="fab fa-viber"></i></a>
+                </div>
+            </div>
+            <div class="footer-col reveal">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="/index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="/HTML/about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="/HTML/tours.html"><i class="fas fa-chevron-right"></i> Tours</a></li>
+                    <li><a href="/HTML/gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                 
+                    <li><a href="/HTML/faqs.html"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col reveal">
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="/HTML/hirerates.html"><i class="fas fa-chevron-right"></i> Vehicle Rental</a></li>
+                    <li><a href="/HTML/tours.html"><i class="fas fa-chevron-right"></i> Guided Tours</a></li>
+                    <li><a href="/HTML/contact.html" class="fas fa-chevron-right"></i> Maintenance & Repair</a></li>
+                    <li><a href="/HTML/contact.html"><i class="fas fa-chevron-right"></i> Custom Travel Plans</a></li>
+                    <li><a href="/HTML/contact.html"><i class="fas fa-chevron-right"></i> Pickup & Drop Service</a></li>
+             
+                </ul>
+            </div>
+            <div class="footer-col reveal">
+                <h5>Contact Us</h5>
+                <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/gvp72kPxN1Tb5xEX6"><span>Thamel, Kathmandu<br>Bagmati
+                        Province, Nepal</span> </a></div>
+               <div class="footer-contact-item">
+                <i class="fas fa-phone-alt"></i><a href="tel:+977 9810048404">
+                <span>+977 9810048404</span></a><a href="tel: +9779746420648"> <span> +977 9746420648</span></a>
+            </div>
+                <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>nepalmotorbiketoursandtravels@gmail.com</span></div>
+                <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Everyday: 7 AM-7PM</span></div> 
+                      
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Nepal Motorbike Rental Service. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="/HTML/PrivacyPolicy.html">Privacy Policy</a>
+                <a href="/HTML/TermsConditions.html">Terms of Use</a>
+                
+            </div>
+        </div>
+        
+    </footer>
+
+     
+</body>
+
+</html>

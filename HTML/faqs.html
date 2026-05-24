@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs — Nepal Motorbike Rental Services</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3774/3774270.png" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,400;1,900&family=Barlow:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/CSS/faq.css">
+  <script src="/JS/faq.js" defer></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6719220436071788"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div id="progress-bar"></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- HEADER -->
+  <header id="header">
+    <a href="/index.html" class="logo"><i class="fas fa-motorcycle" style="font-size:1.4rem;"></i> Nepal Motorbike Rental Services </a>
+    <a href="/index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="faq-hero">
+    <div class="faq-hero-noise"></div>
+    <div class="faq-hero-content">
+      <div class="faq-hero-badge"><i class="fas fa-circle" style="font-size:0.5rem;"></i> Help Centre</div>
+      <h1>Frequently<br><em>Asked</em> Questions</h1>
+      <p>Everything you need to know before you ride. Can't find your answer? We're just a WhatsApp away.</p>
+    </div>
+  </section>
+
+  <!-- CATEGORY FILTER -->
+  <div class="faq-filter">
+    <button class="faq-tab active" onclick="filterFAQ('all', this)"><i class="fas fa-th-large"></i> All</button>
+    <button class="faq-tab" onclick="filterFAQ('hiring', this)"><i class="fas fa-motorcycle"></i> Hiring</button>
+    <button class="faq-tab" onclick="filterFAQ('tours', this)"><i class="fas fa-map-marked-alt"></i> Tours</button>
+    <button class="faq-tab" onclick="filterFAQ('pricing', this)"><i class="fas fa-tags"></i> Pricing</button>
+    <button class="faq-tab" onclick="filterFAQ('documents', this)"><i class="fas fa-id-card"></i> Documents</button>
+    <button class="faq-tab" onclick="filterFAQ('pickup', this)"><i class="fas fa-truck"></i> Pickup & Delivery</button>
+    <button class="faq-tab" onclick="filterFAQ('safety', this)"><i class="fas fa-shield-alt"></i> Safety</button>
+    <button class="faq-tab" onclick="filterFAQ('cancellation', this)"><i class="fas fa-undo"></i> Cancellations</button>
+  </div>
+
+  <!-- MAIN -->
+  <main class="faq-main">
+
+    <!-- ══ HIRING ══ -->
+    <div class="faq-category reveal" id="cat-hiring">
+      <div class="faq-category-header">
+        <div class="faq-category-icon"><i class="fas fa-motorcycle"></i></div>
+        <div>
+          <div class="faq-category-title">Hiring a Vehicle</div>
+        </div>
+        <div class="faq-category-line"></div>
+        <div class="faq-category-count">6 Questions</div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">How do I hire a vehicle from Nepal Motorbike Rental Services?</div>
+          </div>
+          <div class="faq-answer">Simply browse our fleet on the <a href="/HTML/hirerates.html">Hire </a>, pick your vehicle,
+            and click "Hire Now" to send us a WhatsApp message. Our team will confirm availability and guide you through
+            the booking in minutes.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">What is the minimum hire duration?</div>
+          </div>
+          <div class="faq-answer">The minimum hire period is 1 day (24 hours). For bikes, we recommend a minimum of 2–3
+            days for mountain or long-distance trips to fully enjoy the experience.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Can I extend my hire period while on the road?</div>
+          </div>
+          <div class="faq-answer">Yes! Just contact us on WhatsApp before your original return date and we'll arrange an
+            extension, subject to availability. Additional daily rates will apply from the original end date.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Is there a deposit required to hire a vehicle?</div>
+          </div>
+          <div class="faq-answer">A refundable security deposit is required for all hire vehicles. The amount varies by
+            vehicle type — typically NPR 5,000–15,000. This is fully returned when the vehicle is brought back in the
+            same condition.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Can I hire a vehicle for someone else?</div>
+          </div>
+          <div class="faq-answer">Yes, but the person riding or driving the vehicle must present their own valid license
+            at the time of pickup. The hirer's ID and the rider's ID must both be provided.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">What fuel policy applies to hired vehicles?</div>
+          </div>
+          <div class="faq-answer">All vehicles are provided with a full tank. You are expected to return them with a
+            full tank as well. If the tank is not full on return, the fuel cost will be deducted from your security
+            deposit.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ TOURS ══ -->
+    <div class="faq-category reveal" id="cat-tours">
+      <div class="faq-category-header">
+        <div class="faq-category-icon"><i class="fas fa-map-marked-alt"></i></div>
+        <div>
+          <div class="faq-category-title">Tours & Routes</div>
+        </div>
+        <div class="faq-category-line"></div>
+        <div class="faq-category-count">5 Questions</div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">What tours do you offer?</div>
+          </div>
+          <div class="faq-answer">We offer guided and self-guided tours covering Nepal's most iconic routes — including
+            the Annapurna Circuit, Upper Mustang, Everest Base Camp Trail, Langtang Valley, and Pokhara–Kathmandu rides.
+            View all options on our <a href="/HTML/tours.html">Tours page</a>.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Do I need riding experience for the tours?</div>
+          </div>
+          <div class="faq-answer">Some tours are suitable for beginners while others are for experienced riders only.
+            Each tour listing clearly states the skill level required. Our team can also help you choose the right route
+            based on your experience.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Are meals and accommodation included in the tour price?</div>
+          </div>
+          <div class="faq-answer">This depends on the specific tour package. Some packages are fully inclusive (vehicle
+            + guide + accommodation + meals), while others are vehicle and guide only. Please check the tour details or
+            contact us for clarification.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Can I create a custom tour route?</div>
+          </div>
+          <div class="faq-answer">Absolutely! We specialize in custom travel plans. Share your preferred destinations,
+            duration, and budget with us and our team will design a personalized itinerary just for you. Contact us on
+            <a href="/HTML/contact.html">our contact page</a>.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Is a guide mandatory for all tours?</div>
+          </div>
+          <div class="faq-answer">Guides are mandatory for restricted area permits (e.g., Upper Mustang, Manaslu). For
+            other routes, guides are optional but highly recommended for first-time visitors as they know the roads,
+            shortcuts, and local hospitality spots.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ PRICING ══ -->
+    <div class="faq-category reveal" id="cat-pricing">
+      <div class="faq-category-header">
+        <div class="faq-category-icon"><i class="fas fa-tags"></i></div>
+        <div>
+          <div class="faq-category-title">Pricing & Payments</div>
+        </div>
+        <div class="faq-category-line"></div>
+        <div class="faq-category-count">5 Questions</div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">How much does it cost to hire a bike per day?</div>
+          </div>
+          <div class="faq-answer">Rates vary by vehicle type — scooters start from NPR 1,800/day, dirt bikes from NPR
+            4,000/day, adventure bikes from NPR 5,000/day. See the full list with real-time
+            availability on our <a href="/HTML/hirerates.html">Hire </a>.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Are there discounts for longer hire periods?</div>
+          </div>
+          <div class="faq-answer">Yes! We offer special weekly and monthly rates. Bookings of 7+ days receive a
+            discount, and bookings of 30+ days get our best long-term rates. Contact us directly to discuss a package
+            deal.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">What payment methods do you accept?</div>
+          </div>
+          <div class="faq-answer">We accept cash (NPR), eSewa, Khalti, and bank transfers. For international customers,
+            we also accept payment in USD or EUR in cash. We do not currently accept credit or debit cards directly.
+          </div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Are there any hidden charges?</div>
+          </div>
+          <div class="faq-answer">No hidden charges — ever. The daily rate quoted on our Hire page is what you pay. The
+            only additional costs would be fuel, tolls, parking, and any damage repair costs that may arise during your
+            hire period.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Do I pay the full amount upfront?</div>
+          </div>
+          <div class="faq-answer">For standard hire, you pay the hire fee + security deposit at pickup. For tours, a 30%
+            advance is required to confirm your booking, with the remaining balance paid on the day of departure.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ DOCUMENTS ══ -->
+    <div class="faq-category reveal" id="cat-documents">
+      <div class="faq-category-header">
+        <div class="faq-category-icon"><i class="fas fa-id-card"></i></div>
+        <div>
+          <div class="faq-category-title">Documents & License</div>
+        </div>
+        <div class="faq-category-line"></div>
+        <div class="faq-category-count">5 Questions</div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">What documents do I need to hire a vehicle?</div>
+          </div>
+          <div class="faq-answer">You need a valid government-issued ID (citizenship card, passport, or driving license)
+            and a valid driving license for the vehicle category you wish to hire. Copies will be taken and held during
+            the hire period.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Do you accept international driving licenses?</div>
+          </div>
+          <div class="faq-answer">Yes, international driving licenses are accepted. However, if your license is not in
+            English, you must carry a certified translation or an International Driving Permit (IDP) alongside the
+            original.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">What license category do I need for a motorbike?</div>
+          </div>
+          <div class="faq-answer">For bikes up to 200cc, a Class A motorcycle license is required. For bikes above
+            200cc, you need a Class A license with at least 1 year of experience or an equivalent endorsement on your
+            international license.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Can tourists from any country hire vehicles?</div>
+          </div>
+          <div class="faq-answer">Yes! We welcome tourists from all countries. You will need your valid passport,
+            tourist visa, and an international driving permit or home country license for the relevant vehicle class.
+          </div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Are there any age restrictions for hiring?</div>
+          </div>
+          <div class="faq-answer">Hirers must be at least 18 years old with a valid license. For high-powered bikes
+            (400cc and above) and cars, we recommend hirers to be 21 or older with adequate riding or driving
+            experience.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ PICKUP ══ -->
+    <div class="faq-category reveal" id="cat-pickup">
+      <div class="faq-category-header">
+        <div class="faq-category-icon"><i class="fas fa-truck"></i></div>
+        <div>
+          <div class="faq-category-title">Pickup & Delivery</div>
+        </div>
+        <div class="faq-category-line"></div>
+        <div class="faq-category-count">4 Questions</div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Do you offer vehicle delivery and pickup?</div>
+          </div>
+          <div class="faq-answer">Yes! We offer free delivery and pickup within Kathmandu Valley for bookings of 3 days
+            or more. For shorter bookings or locations outside the valley, a small delivery fee applies based on
+            distance.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Can you deliver to the airport?</div>
+          </div>
+          <div class="faq-answer">Yes, we can deliver and collect vehicles from Tribhuvan International Airport,
+            Kathmandu. Please inform us of your flight details at least 24 hours in advance so we can arrange timely
+            delivery.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">What are your pickup hours?</div>
+          </div>
+          <div class="faq-answer">Our standard pickup hours are every day from 7 AM to 7 PM. For
+            early morning or late evening pickups, please contact us in advance to make special arrangements.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Can I return the vehicle to a different location?</div>
+          </div>
+          <div class="faq-answer">One-way drop-offs are possible for certain routes (e.g., Kathmandu to Pokhara). There
+            is an additional one-way fee for this service. Please discuss this with us when booking so we can plan
+            accordingly.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ SAFETY ══ -->
+    <div class="faq-category reveal" id="cat-safety">
+      <div class="faq-category-header">
+        <div class="faq-category-icon"><i class="fas fa-shield-alt"></i></div>
+        <div>
+          <div class="faq-category-title">Safety & Insurance</div>
+        </div>
+        <div class="faq-category-line"></div>
+        <div class="faq-category-count">5 Questions</div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Are the vehicles insured?</div>
+          </div>
+          <div class="faq-answer">All our vehicles carry basic third-party insurance as required by Nepali law. This
+            covers damage to third parties. We strongly recommend purchasing personal travel and accident insurance for
+            your trip — especially for mountain routes.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">What happens if I have an accident?</div>
+          </div>
+          <div class="faq-answer">In the event of an accident, stop safely, contact local authorities if needed, and
+            immediately call or WhatsApp our support line. Document the scene with photos. Repair costs for at-fault
+            damage will be assessed against the security deposit.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Are helmets and safety gear provided?</div>
+          </div>
+          <div class="faq-answer">Yes, helmets are provided with every bike hire — one per rider. We strongly encourage
+            wearing full protective gear. Additional gear (gloves, jackets, knee pads) can be hired separately. Please
+            ask when booking.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">What condition are the vehicles in?</div>
+          </div>
+          <div class="faq-answer">Every vehicle in our fleet is serviced and inspected before each hire. You will be
+            shown the vehicle's condition at pickup and given a checklist. Any pre-existing damage is noted to protect
+            you from unfair charges on return.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">What if the bike breaks down during my trip?</div>
+          </div>
+          <div class="faq-answer">Our support team is reachable 24/7 during your hire period. In the event of a
+            mechanical breakdown not caused by misuse, we will arrange roadside assistance or a replacement vehicle at
+            no additional cost to you.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ CANCELLATION ══ -->
+    <div class="faq-category reveal" id="cat-cancellation">
+      <div class="faq-category-header">
+        <div class="faq-category-icon"><i class="fas fa-undo"></i></div>
+        <div>
+          <div class="faq-category-title">Cancellations & Refunds</div>
+        </div>
+        <div class="faq-category-line"></div>
+        <div class="faq-category-count">4 Questions</div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">What is your cancellation policy?</div>
+          </div>
+          <div class="faq-answer">Cancellations made 48+ hours before the hire/tour start date receive a full refund.
+            Cancellations within 24–48 hours receive a 50% refund. Cancellations within 24 hours or no-shows are
+            non-refundable.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">What if the trip is cancelled due to bad weather?</div>
+          </div>
+          <div class="faq-answer">If we determine a route is unsafe due to weather or road conditions, we will either
+            reschedule at no extra charge or offer a full refund. Your safety is our priority and we will never push a
+            trip under dangerous conditions.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">How long does a refund take to process?</div>
+          </div>
+          <div class="faq-answer">Refunds for cash payments are processed immediately. For digital payments (eSewa,
+            Khalti, bank transfer), refunds are processed within 3–5 business days. Please keep your payment receipt for
+            reference.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q-row">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-question">Can I reschedule instead of cancelling?</div>
+          </div>
+          <div class="faq-answer">Yes! We strongly encourage rescheduling over cancellation. You can reschedule your
+            booking free of charge up to 24 hours before the start date, subject to vehicle or tour availability on your
+            new preferred date.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ STILL HAVE QUESTIONS ══ -->
+    <div class="faq-cta reveal">
+      <div class="faq-cta-text">
+        <h3>Still Have Questions?</h3>
+        <p>Our team is always ready to help — reach out anytime on WhatsApp or visit our contact page.</p>
+      </div>
+      <div class="faq-cta-btns">
+        <a href="https://wa.me/9779810048404?text=Hi%2C%20I%20have%20a%20question%20about%20your%20services!"
+          target="_blank" class="btn-primary"><i class="fab fa-whatsapp"></i> Ask on WhatsApp</a>
+        <a href="/HTML/contact.html" class="btn-ghost"><i class="fas fa-envelope"></i> Contact Page</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="faq-footer">
+    <p>© 2026 Nepal Motorbike Rental Services. All rights reserved.</p>
+    <a href="/index.html"><i class="fas fa-arrow-left"></i> Back to Main Site</a>
+  </footer>
+
+  
+</body>
+
+</html>

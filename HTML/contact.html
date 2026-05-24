@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Nepal Motorbike Rental Services</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3774/3774270.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,400;1,900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+   <script src="../JS/contact.js" defer></script>
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6719220436071788"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ══ TOAST ══ -->
+<div class="toast" id="toast">
+    <i id="toastIcon"></i>
+    <span id="toastMsg"></span>
+</div>
+
+<!-- ══ MODAL ══ -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <h3>Submission Detail</h3>
+            <button class="modal-close" onclick="closeModalDirect()"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+    </div>
+</div>
+
+<div id="progress-bar"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- ══ SIDEBAR ══ -->
+<div class="sidebar-overlay" id="overlay" onclick="toggleSidebar()"></div>
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+        <div class="sidebar-logo">Nepal Motorbike Rental Services</div>
+        <div class="close-btn" onclick="toggleSidebar()"><i class="fas fa-times"></i></div>
+    </div>
+    <div class="sidebar-body">
+        <ul class="sidebar-nav">
+            <li><a href="/index.html"   onclick="toggleSidebar()"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="/HTML/about.html"   onclick="toggleSidebar()"><i class="fas fa-info-circle"></i> About</a></li>
+           
+            <li><a href="/HTML/hirerates.html"            onclick="toggleSidebar()"><i class="fas fa-tag"></i> Hire Rates</a></li>
+            <li><a href="/HTML/tours.html"            onclick="toggleSidebar()"><i class="fas fa-map-marked-alt"></i> Tours</a></li>
+            <li><a href="/HTML/gallery.html"            onclick="toggleSidebar()"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="/HTML/faqs.html"            onclick="toggleSidebar()"><i class="fas fa-question-circle"></i> FAQs</a></li>
+           
+            <li><a href="/HTML/contact.html" onclick="toggleSidebar()"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-socials">
+        <a href="https://www.facebook.com/people/Nepal-Motor-Bike-Tours-Travels/61578549223154/?rdid=8cX7n7ATaDz5udY1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BcRCTuYwh%2F" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/@nepalmotorbiketourstravels" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@nepal.motorbike.r" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/9779810048404" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="viber://chat?number=%2B9779810048404" target="_blank"><i class="fab fa-viber"></i></a>
+    </div>
+</div>
+
+<!-- ══ HEADER ══ -->
+<header id="header">
+    <a href="/index.html" class="logo"><i class="fas fa-motorcycle" style="font-size:1.4rem"></i> Nepal Motorbike Rental Services</a>
+    <ul class="nav-links">
+         <li><a href="/index.html">Home</a></li>
+           
+            <li><a href="/HTML/about.html">About</a></li>
+            
+            <li><a href="/HTML/hirerates.html">Hire Rates</a></li>
+            <li><a href="/HTML/tours.html">Tours</a></li>
+            <li><a href="/HTML/faqs.html">FAQs</a></li>
+           
+            <li><a href="/HTML/gallery.html">Gallery</a></li>
+            <li><a href="/HTML/contact.html">Contact</a></li>
+    </ul>
+    <button class="menu-btn" onclick="toggleSidebar()">
+        <div class="hamburger-lines"><div></div><div></div><div></div></div>
+        MENU
+    </button>
+</header>
+
+<main>
+
+    <!-- ══ HERO ══ -->
+    <section class="contact-hero">
+        <div class="contact-hero-bg"></div>
+        <div class="contact-hero-noise"></div>
+        <div class="contact-hero-content">
+            <div class="breadcrumb">
+                <a href="/index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                Contact
+            </div>
+            <h1>Get In <em>Touch</em></h1>
+            <p>Whether you want to hire a bike, book a tour, or just ask a question — we're right here.</p>
+        </div>
+        <div class="fog-edge"></div>
+    </section>
+
+    <div class="dirt-edge"></div>
+
+    <!-- ══ INFO CARDS ══ -->
+    <section class="info-section">
+        <div class="info-grid">
+            <div class="info-card reveal">
+                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h4>Find Us</h4>
+                <a href="https://maps.app.goo.gl/xvnypGz8sViUKXex5"><p>Thamel Marg, Kathmandu<br>Bagmati Province, Nepal</p></a>
+            </div>
+            <div class="info-card reveal">
+                <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                <h4>Call Us</h4>
+                <p>
+                    <a href="tel:+977 9810048404">+977 9810048404</a><br>
+                    <a href="tel:+977 9746420648">+977 9746420648</a>
+                </p>
+            </div>
+            <div class="info-card reveal">
+                <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                <h4>Email Us</h4>
+                <p>
+                    <a href="mailto:nepalmotorbiketoursandtravels@gmail.com">nepalmotorbiketoursandtravels@gmail.com</a><br>
+                   
+                </p>
+            </div>
+            <div class="info-card reveal">
+                <div class="info-icon"><i class="fas fa-clock"></i></div>
+                <h4>Open Hours</h4>
+                <p> Everyday: 7:00 AM – 7:00 PM – 
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ CONTACT FORM + MAP ══ -->
+    <section class="contact-main">
+        <div class="contact-layout">
+
+            <!-- FORM -->
+            <div class="form-wrap reveal">
+                <div class="section-tag">Send a Message</div>
+                <div class="form-title">We'd Love to Hear From You</div>
+                <p class="form-subtitle">Fill out the form below and our team will get back to you within 24 hours.</p>
+
+                <form id="contactForm" novalidate>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name <span class="req">*</span></label>
+                            <input class="form-input" id="fname" type="text" placeholder="e.g. Rajesh Tamang" maxlength="60">
+                            <div class="field-error" id="fname-err"></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input class="form-input" id="fphone" type="tel" placeholder="+977 98XXXXXXXX" maxlength="20">
+                            <div class="field-error" id="fphone-err"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address <span class="req">*</span></label>
+                        <input class="form-input" id="femail" type="email" placeholder="you@example.com" maxlength="100">
+                        <div class="field-error" id="femail-err"></div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Enquiry Type <span class="req">*</span></label>
+                            <select class="form-select" id="ftype">
+                                <option value="">— Select a type —</option>
+                                <option value="hire">Bike Hire</option>
+                                <option value="tour">Guided Tour</option>
+                                <option value="repair">Repair Service</option>
+                                <option value="event">Events</option>
+                                <option value="general">General Enquiry</option>
+                            </select>
+                            <div class="field-error" id="ftype-err"></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Date</label>
+                            <input class="form-input" id="fdate" type="date">
+                            <div class="field-error" id="fdate-err"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Subject <span class="req">*</span></label>
+                        <input class="form-input" id="fsubject" type="text" placeholder="Brief subject line" maxlength="120">
+                        <div class="field-error" id="fsubject-err"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Message <span class="req">*</span></label>
+                        <textarea class="form-textarea" id="fmessage" placeholder="Tell us about your ride, question, or request..." maxlength="1000"></textarea>
+                        <div class="char-counter" id="fmessage-counter">0 / 1000</div>
+                        <div class="field-error" id="fmessage-err"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Rate Your Experience (Optional)</label>
+                        <div class="star-rating" id="starRating">
+                            <input type="radio" name="rating" id="s5" value="5"><label for="s5">★</label>
+                            <input type="radio" name="rating" id="s4" value="4"><label for="s4">★</label>
+                            <input type="radio" name="rating" id="s3" value="3"><label for="s3">★</label>
+                            <input type="radio" name="rating" id="s2" value="2"><label for="s2">★</label>
+                            <input type="radio" name="rating" id="s1" value="1"><label for="s1">★</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <div class="spinner" id="spinner"></div>
+                        <i class="fas fa-paper-plane" id="submitIcon"></i>
+                        <span id="submitText">Send Message</span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- RIGHT: MAP + LINKS + SOCIALS -->
+            <div class="contact-right reveal">
+
+                <!-- Map -->
+                <div class="map-wrap">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7063.608762871113!2d85.3018762!3d27.7233255!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190037d7fc9f%3A0x769ce73f7f055b08!2sNepal%20MotorBike%20Rental%20Service!5e0!3m2!1sen!2snp!4v1776925781411!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+
+                <!-- Quick links -->
+                <div class="quick-links">
+                    <h4>Quick Actions</h4>
+                    <div class="quick-link-list">
+                        <a href="#" class="quick-link-item">
+                            <div class="quick-link-left"><i class="fas fa-motorcycle"></i><span>View Hire Rates</span></div>
+                            <i class="fas fa-chevron-right quick-link-arrow"></i>
+                        </a>
+                        <a href="/index.html" class="quick-link-item">
+                            <div class="quick-link-left"><i class="fas fa-route"></i><span>Browse Tours</span></div>
+                            <i class="fas fa-chevron-right quick-link-arrow"></i>
+                        </a>
+                        <a href="/HTML/about.html" class="quick-link-item">
+                            <div class="quick-link-left"><i class="fas fa-users"></i><span>Meet the Team</span></div>
+                            <i class="fas fa-chevron-right quick-link-arrow"></i>
+                        </a>
+                       
+                        <a href="https://wa.me/977980000000" target="_blank" class="quick-link-item">
+                            <div class="quick-link-left"><i class="fab fa-whatsapp"></i><span>WhatsApp Us Now</span></div>
+                            <i class="fas fa-chevron-right quick-link-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Social buttons -->
+                <div class="social-row">
+                    <a href="https://www.facebook.com/people/Nepal-Motor-Bike-Tours-Travels/61578549223154/?rdid=wSD2TKQLCLv1blkZ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BcRCTuYwh%2F" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i>Facebook</a>
+                    <a href="https://www.instagram.com/nepalmotorbiketoursandtravels?igsh=bW44N3Rndnk0bmlp" target="_blank" class="social-btn"><i class="fab fa-instagram"></i>Instagram</a>
+                    <a href="https://www.youtube.com/@nepalmotorbiketourstravels" target="_blank" class="social-btn"><i class="fab fa-youtube"></i>YouTube</a>
+                    <a href="https://www.tiktok.com/@nepal.motorbike.r" target="_blank" class="social-btn"><i class="fab fa-tiktok"></i>TikTok</a>
+                    <a href="https://wa.me/9779810048404" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══ RECORDS / ADMIN PANEL ══ -->
+    <section class="admin-section" id="adminPanel">
+        <div class="admin-header reveal">
+            <div>
+                <div class="section-tag">Database</div>
+                <h2>Contact <span>Records</span></h2>
+            </div>
+            <div class="admin-controls">
+                <button class="admin-btn primary" onclick="exportCSV()"><i class="fas fa-download"></i> Export CSV</button>
+                <button class="admin-btn ghost"   onclick="refreshTable()"><i class="fas fa-sync-alt"></i> Refresh</button>
+                <button class="admin-btn danger"  onclick="clearAllRecords()"><i class="fas fa-trash"></i> Clear All</button>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="records-stats reveal" id="recStats">
+            <div class="rec-stat"><div class="rec-stat-num" id="statTotal">0</div><div class="rec-stat-label">Total Enquiries</div></div>
+            <div class="rec-stat"><div class="rec-stat-num" id="statToday">0</div><div class="rec-stat-label">Today</div></div>
+            <div class="rec-stat"><div class="rec-stat-num" id="statHire">0</div><div class="rec-stat-label">Bike Hire</div></div>
+            <div class="rec-stat"><div class="rec-stat-num" id="statTour">0</div><div class="rec-stat-label">Tours</div></div>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="admin-filter-bar reveal">
+            <input class="admin-search" id="adminSearch" placeholder="Search by name, email, subject..." oninput="renderTable()">
+            <select class="admin-filter-select" id="adminFilterType" onchange="renderTable()">
+                <option value="">All Types</option>
+                <option value="hire">Bike Hire</option>
+                <option value="tour">Tour</option>
+                <option value="repair">Repair</option>
+                <option value="event">Event</option>
+                <option value="general">General</option>
+            </select>
+            <select class="admin-filter-select" id="adminSortBy" onchange="renderTable()">
+                <option value="newest">Newest First</option>
+                <option value="oldest">Oldest First</option>
+                <option value="name">Name A–Z</option>
+            </select>
+        </div>
+
+        <!-- Table -->
+        <div class="table-wrap reveal">
+            <table>
+                <thead>
+                    <tr>
+                        <th onclick="sortBy('id')">#<i class="fas fa-sort"></i></th>
+                        <th onclick="sortBy('name')">Name<i class="fas fa-sort"></i></th>
+                        <th onclick="sortBy('email')">Email<i class="fas fa-sort"></i></th>
+                        <th onclick="sortBy('type')">Type<i class="fas fa-sort"></i></th>
+                        <th onclick="sortBy('subject')">Subject<i class="fas fa-sort"></i></th>
+                        <th onclick="sortBy('rating')">Rating<i class="fas fa-sort"></i></th>
+                        <th onclick="sortBy('date')">Date<i class="fas fa-sort"></i></th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination reveal" id="paginationWrap">
+            <div class="pagination-info" id="paginationInfo"></div>
+            <div class="pagination-btns" id="paginationBtns"></div>
+        </div>
+    </section>
+
+    <!-- ══ CTA ══ -->
+    <div class="cta-band">
+        <div>
+            <h2>Ready to Hit the Road?</h2>
+            <p>Book a bike or a tour — no deposit required on select rentals.</p>
+        </div>
+        <a href="/index.html" class="btn-white"><i class="fas fa-motorcycle"></i> Explore Tours</a>
+    </div>
+
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand reveal">
+            <a href="/index.html" class="logo"><i class="fas fa-motorcycle" style="font-size:1.4rem"></i> Nepal Motorbike Rental Services</a>
+            <p>Nepal's premier dirtbike hire and adventure tour company. Exploring every trail since 2015.</p>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/people/Nepal-Motor-Bike-Tours-Travels/61578549223154/?rdid=8cX7n7ATaDz5udY1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BcRCTuYwh%2F" target="_blank" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/nepalmotorbiketoursandtravels?igsh=bW44N3Rndnk0bmlp" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@nepalmotorbiketourstravels" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@nepal.motorbike.r" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://wa.me/9779810048404" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="viber://chat?number=%2B9779810048404" target="_blank"><i class="fab fa-viber"></i></a>
+            </div>
+        </div>
+        <div class="footer-col reveal">
+            <h5>Quick Links</h5>
+            <ul>
+                <li><a href="/index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                <li><a href="/HTML/about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                <li><a href="/HTML/tours.html"><i class="fas fa-chevron-right"></i> Tours</a></li>
+                
+                <li><a href="/HTML/contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col reveal">
+            <h5>Services</h5>
+            <ul>
+                <li><a href="/HTML/hirerates.html"><i class="fas fa-chevron-right"></i> Bike Hire</a></li>
+                <li><a href="/HTML/contact.html"><i class="fas fa-chevron-right"></i> Guided Tours</a></li>
+                <li><a href="/HTML/contact.html"><i class="fas fa-chevron-right"></i> Repair Service</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-col reveal">
+            <h5>Contact Us</h5>
+            <div class="footer-contact-item"> <i class="fas fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/gvp72kPxN1Tb5xEX6"><span>Thamel, Kathmandu<br>Bagmati Province, Nepal</span> </a></div>
+            <div class="footer-contact-item">
+                <i class="fas fa-phone-alt"></i><a href="tel:+977 9810048404">
+                <span>+977 9810048404</span></a><a href="tel: +9779746420648"> <span> +977 9746420648</span></a>
+            </div>
+            <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>nepalmotorbiketoursandtravels@gmail.com</span></div>
+            <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Everyday: 7 AM-7PM</span></div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Nepal Motorbike Rental Services. All rights reserved.</p>
+        <div class="footer-bottom-links">
+            <a href="/HTML/PrivacyPolicy.html">Privacy Policy</a>
+            <a href="/HTML/TermsConditions.html">Terms of Use</a>
+        
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

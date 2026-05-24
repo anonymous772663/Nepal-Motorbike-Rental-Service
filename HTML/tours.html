@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Tours — Nepal Motorbike Rental Services</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3774/3774270.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,400;1,900&family=Barlow:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/CSS/tours.css">
+  <style>
+    .bb {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      padding: 0.65rem 1rem;
+      min-width: 100px;
+      box-sizing: border-box;
+    }
+    .bb i {
+      margin-right: 0.45rem;
+      display: inline-flex;
+      align-items: center;
+    }
+  </style>
+  <script src="/JS/tours.js" defer></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6719220436071788"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="pb"></div>
+  <div class="cursor" id="cur"></div>
+  <div class="cursor-ring" id="crng"></div>
+  <div class="so" id="so" onclick="ts()"></div>
+  <div class="sb" id="sb">
+    <div class="sb-top">
+      <div class="sb-logo">Nepal Motorbike Rental Services</div><button class="cb" onclick="ts()"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="sb-body">
+      <ul class="sb-nav">
+        <li><a href="/index.html">Home</a></li>
+       
+        <li><a href="/HTML/about.html">About</a></li>
+   
+        <li><a href="/HTML/hirerates.html">Hire Rates</a></li>
+        <li><a href="/HTML/tours.html">Tours</a></li>
+        <li><a href="/HTML/faqs.html">FAQs</a></li>
+        
+        <li><a href="/HTML/gallery.html">Gallery</a></li>
+        <li><a href="/HTML/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="sb-soc"><a href="https://www.facebook.com/people/Nepal-Motor-Bike-Tours-Travels/61578549223154/?rdid=8cX7n7ATaDz5udY1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BcRCTuYwh%2F" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/nepalmotorbiketoursandtravels?igsh=bW44N3Rndnk0bmlp"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@nepalmotorbiketourstravels"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@nepal.motorbike.r"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/9779810048404" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+  <header id="hd">
+    <a href="/index.html" class="logo"><i class="fas fa-motorcycle" style="font-size:1.4rem"></i>Nepal 
+      Motorbike Rental Services </a>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+    
+      <li><a href="/HTML/about.html">About</a></li>
+      <li><a href="/HTML/hirerates.html">Hire Rates</a></li>
+      <li><a href="/HTML/tours.html" class="active">Tours</a></li>
+      <li><a href="/HTML/gallery.html">Gallery</a></li>
+      <li><a href="/HTML/contact.html">Contact</a></li>
+    </ul>
+    <button class="menu-btn" onclick="ts()">
+      <div class="hl">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>MENU
+    </button>
+  </header>
+  <main>
+    <section class="ph">
+      <div class="ph-bg"></div>
+      <div class="ph-c">
+        <div class="bc"><a href="/index.html">Home</a><i class="fas fa-chevron-right"></i>Tours</div>
+        <h1>Epic <em>Tours</em></h1>
+        <p>Hand-crafted motorcycle expeditions across Nepal's most legendary terrain — from 5,000m passes to jungle
+          lowlands.</p>
+      </div>
+      <div class="fog"></div>
+    </section>
+    <div class="de"></div>
+
+    <div class="tf rv">
+      <div class="tf-bar">
+        <div class="tf-tabs">
+          <button class="tt on" onclick="ft(this,'all')"><i class="fas fa-globe-asia"></i>All Tours</button>
+          <button class="tt" onclick="ft(this,'himalaya')"><i class="fas fa-mountain"></i>Himalaya</button>
+          <button class="tt" onclick="ft(this,'mustang')"><i class="fas fa-wind"></i>Mustang</button>
+          <button class="tt" onclick="ft(this,'terai')"><i class="fas fa-tree"></i>Terai</button>
+          <button class="tt" onclick="ft(this,'custom')"><i class="fas fa-sliders-h"></i>Custom</button>
+        </div>
+        <select class="tf-sort" onchange="sortT(this.value)">
+          <option value="d">Sort: Featured</option>
+          <option value="pa">Price: Low → High</option>
+          <option value="pd">Price: High → Low</option>
+          <option value="dur">Duration</option>
+        </select>
+      </div>
+    </div>
+
+    <section class="ts">
+      <div class="tg" id="tg">
+        <div class="tc feat rv" data-cat="himalaya" data-price="#" data-days="1">
+          <div class="ti-w"><img class="ti" src="https://travelhousenepal.com/wp-content/uploads/2018/06/Boudhanath.jpg"
+              alt="Kathmandu Valley Heritage Ride">
+            <div class="tdiff d-h">Begineers, Culture Lovers </div>
+            <div class="tdur"><i class="fas fa-clock"></i></div>
+          </div>
+          <div class="tb">
+            <div class="t-meta"><span><i class="fas fa-map-marker-alt"></i>Kathmandu Valley</span><span><i
+                  class="fas fa-mountain"></i></span><span><i class="fas fa-users"></i>No Limits</span></div>
+            <h3>Kathmandu Valley Heritage Ride</h3>
+            <p>Explore the rich cultural heart of Nepal through a memorable ride across the ancient cities of the Kathmandu Valley. Discover centuries-old temples, royal palaces, traditional streets, and vibrant local life while enjoying a perfect blend of history, art, and spirituality. Ideal for travelers who love culture, architecture, and scenic city experiences.</p> <br><p>Places to visit: Kathmandu Durbar Square, Patan Durbar Square, Bhaktapur Durbar Square, Swayambhunath, Boudhanath</p>
+            <div class="t-chips"><span class="chip">Guide</span><span class="chip">Meals (optional)</span><span
+                class="chip">Camping</span><span class="chip">Permits</span><span class="chip">Support Vehicle</span>
+            </div>
+            <div class="t-foot">
+              <div class="t-price"><br><small>Prices vary depending on the destination, number of people, bike selection, tour duration, and season.</small></div><a href="https://wa.me/9779810048404?text=Hi%20I%20want%20to%20book%20the%20Kathmandu%20Valley%20Heritage%20Ride%20tour.%20Please%20share%20details."  target="_blank" class="bb"><i
+                  class="fas fa-calendar-check"></i>Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="tc rv" data-cat="mustang" data-price="" data-days="8" style="display:flex; flex-direction:column; height:100%;" id="mustang">
+          <div class="ti-w" style="overflow:hidden; min-height:220px; flex:1;"><img class="ti" style="width:100%; height:100%; object-fit:cover; display:block;" src="/Images/Manang.jpeg"
+              alt="Mustang">
+            <div class="tdiff d-x">Advanced/ Off-road Adventure</div>
+            <div class="tdur"><i class="fas fa-clock"></i></div>
+          </div>
+          <div class="tb" style="flex:1; display:flex; flex-direction:column; justify-content:space-between;">
+            <div class="t-meta"><span><i class="fas fa-map-marker-alt"></i></span><span><i
+                  class="fas fa-mountain"></i></span><span><i class="fas fa-users"></i> No Limits</span></div>
+            <h3> Mustang </h3>
+            <p>Experience the hidden kingdom of  Mustang, a remote Himalayan region famous for its dramatic desert landscapes, ancient Tibetan culture, and centuries-old monasteries. This unforgettable journey offers breathtaking mountain views, traditional villages, and a unique glimpse into Nepal’s preserved heritage beyond the Himalayas.</p> <br> <p>Places to visit: Lo Manthang, Muktinath Temple, Chhoser Cave, Kagbeni, Marpha</p>
+            <div class="t-chips"><span class="chip">Guide</span><span class="chip">Meals</span><span
+                class="chip">Permits</span></div>
+            <div class="t-foot">
+              <div class="t-price"><br><small></small></div><a href="https://wa.me/9779810048404?text=Hi%20I%20want%20to%20book%20the%20Mustang%20Expedition.%20Please%20share%20itinerary%20and%20cost." target="_blank" class="bb"><i
+                  class="fas fa-calendar-check"></i>Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="tc rv" data-cat="himalaya" data-price="" data-days="">
+          <div class="ti-w"><img class="ti" src="https://wallpaperaccess.com/full/4401237.jpg"
+              alt="EBC">
+            <div class="tdiff d-x">Expert</div>
+            <div class="tdur"><i class="fas fa-clock"></i></div>
+          </div>
+          <div class="tb">
+            <div class="t-meta"><span><i class="fas fa-map-marker-alt"></i>Kathmandu-Pokhara</span><span><i
+                  class="fas fa-mountain"></i></span><span><i class="fas fa-users"></i>No Limits</span></div>
+            <h3>Pokhara- Fewa Taal</h3>
+            <p>A beautiful lakeside city surrounded by the Himalayas, known for adventure sports and peaceful scenery. Pokhara offers boating, paragliding, mountain views, and vibrant cafés, making it a perfect getaway for nature lovers and thrill seekers.</p><br><p>Places to visit: Phewa Lake, Sarangkot, Davis Falls, World Peace Pagoda.</p>
+            <div class="t-chips"><span class="chip">Guide</span><span class="chip">Meals</span><span
+                class="chip">Permits</span></div>
+            <div class="t-foot">
+              <div class="t-price"><br><small>Prices vary depending on the destination, number of people, bike selection, tour duration, and season.</small></div><a href="https://wa.me/9779810048404?text=Hi%20I%20want%20to%20book%20the%20Pokhara%20Adventure%20Tour.%20Looking%20forward%20to%20an%20amazing%20experience." target="_blank" class="bb"><i
+                  class="fas fa-calendar-check"></i>Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="tc rv" data-cat="terai" data-price="28000" data-days="3" id="chitwan">
+          <div class="ti-w"><img class="ti" src="/Images/chitwan.png"
+              alt="Chitwan">
+            <div class="tdiff d-e">Easy</div>
+            <div class="tdur"><i class="fas fa-clock"></i></div>
+          </div>
+          <div class="tb">
+            <div class="t-meta"><span><i class="fas fa-map-marker-alt"></i>Kathmandu→Chitwan</span><span><i
+                  class="fas fa-tree"></i>Jungle</span><span><i class="fas fa-users"></i>Unlimited</span></div>
+            <h3>Chitwan Jungle Run — Terai Lowlands</h3>
+            <p>Discover the natural beauty and wildlife of Chitwan National Park, Nepal’s famous jungle destination known for its rich biodiversity and exciting safari experiences. Enjoy jungle adventures, cultural encounters, river activities, and the chance to spot rare animals including the one-horned rhinoceros and Bengal tiger.</p> <br> <p>Places to visit: Chitwan National Park, Rapti River, Sauraha, Elephant Breeding Center, Tharu Cultural Museum</p>
+            <div class="t-chips"><span class="chip">Guide</span><span class="chip">Meals</span><span
+                class="chip">Accommodation</span></div>
+            <div class="t-foot">
+              <div class="t-price"><br><small>Prices vary depending on the destination, number of people, bike selection, tour duration, and season.</small></div><a href="https://wa.me/9779810048404?text=Hi%20I%20want%20to%20book%20the%20Chitwan%20Jungle%20Safari%20tour.%20Please%20send%20details%20and%20price." target="_blank"" class="bb"><i
+                  class="fas fa-calendar-check"></i>Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="tc rv" data-cat="terai" data-price="45000" data-days="#">
+          <div class="ti-w"><img class="ti" src="https://wallpapercave.com/wp/wp11844544.jpg"
+              alt="Lumbini">
+            <div class="tdiff d-m">Moderate</div>
+            <div class="tdur"><i class="fas fa-clock"></i></div>
+          </div>
+          <div class="tb">
+            <div class="t-meta"><span><i class="fas fa-map-marker-alt"></i>Kathmandu→Lumbini</span><span><i
+                  class="fas fa-mountain"></i></span><span><i class="fas fa-users"></i>No Limits</span></div>
+            <h3>Lumbini- Birth Place Of Lord Buddha.</h3>
+            <p>Visit the sacred birthplace of Lord Buddha and experience the peaceful atmosphere of Lumbini, one of the world’s most important pilgrimage destinations. Surrounded by monasteries, meditation centers, and beautiful gardens, Lumbini offers a unique blend of spirituality, history, and cultural heritage for travelers seeking peace and inspiration.</p> <br><p>Places to visit: Maya Devi Temple, Lumbini Garden, World Peace Pagoda, Ashoka Pillar, Thai Monastery</p>
+            <div class="t-chips"><span class="chip">Guide</span><span class="chip">Meals</span><span class="chip">Tea
+                Houses</span></div>
+            <div class="t-foot">
+              <div class="t-price"><br><small>Prices vary depending on the destination, number of people, bike selection, tour duration, and season.</small></div><a href="https://wa.me/9779810048404?text=Hi%20I%20want%20to%20book%20the%20Lumbini%20Spiritual%20Tour.%20Please%20send%20details." target="_blank" class="bb"><i
+                  class="fas fa-calendar-check"></i>Book Now</a>
+            </div>
+          </div>
+        </div>
+
+
+                  <div class="tc rv" data-cat="himalaya" data-price="#" data-days="3" id="darjee">
+          <div class="ti-w"><img class="ti" src="/Images/Darajeeling.jpeg"
+              alt="Darjeeling">
+            <div class="tdiff d-e">Easy</div>
+            <div class="tdur"><i class="fas fa-clock"></i></div>
+          </div>
+          <div class="tb">
+            <div class="t-meta"><span><i class="fas fa-map-marker-alt"></i>Kathmandu→Darjeeling</span><span><i
+                  class="fas fa-tree"></i>Jungle</span><span><i class="fas fa-users"></i>Unlimited</span></div>
+            <h3>Darjeeling Himalayan Tour</h3>
+            <p>Experience the charm of Darjeeling, a scenic hill station famous for its tea gardens, misty mountains, and colonial-era charm. Wake up to breathtaking sunrise views over Kanchenjunga and enjoy a peaceful blend of nature, culture, and mountain life. Perfect for couples, families, and nature lovers.</p> <br><p>Places to visit: Tiger Hill, Batasia Loop, Darjeeling Himalayan Railway, Peace Pagoda Darjeeling, Happy Valley Tea Estate</p>
+            <div class="t-chips"><span class="chip">Guide</span><span class="chip">Meals</span><span
+                class="chip">Accommodation</span></div>
+            <div class="t-foot">
+              <div class="t-price"><br><small>Prices vary depending on the destination, number of people, bike selection, tour duration, and season.</small></div><a href="https://wa.me/9779810048404?text=Hi%20I%20want%20to%20book%20the%20Darjeeling%20Tour.%20Please%20share%20package%20details." target="_blank" class="bb"><i
+                  class="fas fa-calendar-check"></i>Book Now</a>
+            </div>
+          </div>
+        </div>
+
+
+
+            <div class="tc rv" data-cat="mustang" data-price="28000" data-days="3">
+          <div class="ti-w"><img class="ti" src="https://wallpapercat.com/w/full/3/2/5/1542418-3840x2160-desktop-4k-tilicho-lake-wallpaper-photo.jpg"
+              alt="Manang">
+            <div class="tdiff d-e">hard</div>
+            <div class="tdur"><i class="fas fa-clock"></i></div>
+          </div>
+          <div class="tb">
+            <div class="t-meta"><span><i class="fas fa-map-marker-alt"></i>Kathmandu→Manang</span><span><i
+                  class="fas fa-tree"></i>Mountain</span><span><i class="fas fa-users"></i>Unlimited</span></div>
+            <h3>Manang-Tilicho Lake</h3>
+            <p>EExplore the remote and breathtaking region of Manang District, a high-altitude valley surrounded by dramatic peaks, glaciers, and ancient Tibetan-influenced villages. Known for its rugged beauty and serene atmosphere, Manang is a paradise for trekkers and nature lovers seeking raw Himalayan adventure and culture.</p> <br><p>Places to visit: Manang Village, Gangapurna Lake, Ice Lake (Kicho Tal), Braga Monastery, Thorong La Pass.</p>
+            <div class="t-chips"><span class="chip">Guide</span><span class="chip">Meals</span><span
+                class="chip">Accommodation</span></div>
+            <div class="t-foot">
+              <div class="t-price"><br><small>Prices vary depending on the destination, number of people, bike selection, tour duration, and season.</small></div><a href="https://wa.me/9779810048404?text=Hi%20I%20want%20to%20book%20the%20Manang%20Adventure%20Tour.%20I%20am%20interested%20in%20the%20trip." target="_blank" class="bb"><i
+                  class="fas fa-calendar-check"></i>Book Now</a>
+            </div>
+          </div>
+        </div>
+
+
+             <div class="tc rv" data-cat="himalaya" data-price="" data-days="3" id="illam">
+          <div class="ti-w"><img class="ti" src="/Images/illam.jpeg"
+              alt="Illam">
+            <div class="tdiff d-e">hard</div>
+            <div class="tdur"><i class="fas fa-clock"></i></div>
+          </div>
+          <div class="tb">
+            <div class="t-meta"><span><i class="fas fa-map-marker-alt"></i>Kathmandu→Ilam</span><span><i
+                  class="fas fa-tree"></i>Mountain</span><span><i class="fas fa-users"></i>Unlimited</span></div>
+            <h3>Ilam Tea Garden Escape</h3>
+            <p>Discover the serene beauty of Ilam, a lush green hill district famous for its rolling tea gardens, cool climate, and peaceful natural surroundings. It’s a perfect destination for relaxation, scenic walks, and experiencing rural Himalayan lifestyle blended with stunning landscapes and fresh mountain air.</p> <br> <p>Places to visit: Kanyam Tea Garden, Mai Pokhari, Shree Antu Danda, Sandakpur, Fikkal Bazaar</p>
+            <div class="t-chips"><span class="chip">Guide</span><span class="chip">Meals</span><span
+                class="chip">Accommodation</span></div>
+            <div class="t-foot">
+              <div class="t-price"><br><small>Prices vary depending on the destination, number of people, bike selection, tour duration, and season.</small></div><a href="https://wa.me/9779810048404?text=Hi%20I%20want%20to%20book%20the%20Ilam%20Tea%20Garden%20Tour.%20Please%20send%20more%20information." target="_blank" class="bb"><i
+                  class="fas fa-calendar-check"></i>Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tc rv" data-cat="custom" data-price="0" data-days="0" id="custom">
+          <div class="ti-w"
+            style="background:linear-gradient(135deg,rgba(255,69,0,.15),rgba(255,140,0,.08));min-height:220px;display:flex;align-items:center;justify-content:center;">
+            <div style="text-align:center;padding:40px 20px;"><i class="fas fa-sliders-h"
+                style="font-size:3rem;color:var(--fire);margin-bottom:16px;display:block;"></i>
+              <div style="font-family:'Bebas Neue',cursive;font-size:1.8rem;letter-spacing:2px;">Build Your Own Tour
+              </div>
+            </div>
+          </div>
+          <div class="tb">
+            <div class="t-meta"><span><i class="fas fa-route"></i>Any Route</span><span><i
+                  class="fas fa-calendar"></i>Any Duration</span><span><i class="fas fa-users"></i>Any Group</span>
+            </div>
+            <h3>Custom Ride — Your Route, Your Rules</h3>
+            <p>Tell us your dream route, dates, and group size. We build a fully personalised expedition just for you.
+            </p>
+            <div class="t-chips"><span class="chip">Fully Custom</span><span class="chip">Private Guide</span><span
+                class="chip">Any Bike</span></div>
+            <div class="t-foot">
+              <div class="t-price" style="font-size:1.1rem;color:var(--amber);">Get a Quote</div><a href="https://wa.me/9779810048404?text=Hello%2C%20I%20would%20like%20a%20customized%20tour%20package.%20Please%20assist%20me%20with%20a%20personalized%20itinerary%20and%20pricing." target="_blank"
+                class="bb"><i class="fas fa-paper-plane"></i>Request</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ws">
+      <div class="stag rv" style="justify-content:center">Why Ride With Us</div>
+      <h2 class="rv"
+        style="font-family:'Bebas Neue',cursive;font-size:clamp(2.5rem,5vw,4rem);letter-spacing:2px;text-align:center;">
+        Every Tour Is <span style="color:var(--fire)">Crafted</span></h2>
+      <div class="wg">
+        <div class="wc rv">
+          <div class="wc-i"><i class="fas fa-map-marked-alt"></i></div>
+          <h4>Expert Local Guides</h4>
+          <p>Every guide has ridden the route dozens of times. They know every shortcut, campsite, and mechanic on the
+            trail.</p>
+        </div>
+        <div class="wc rv">
+          <div class="wc-i"><i class="fas fa-shield-alt"></i></div>
+          <h4>Full Safety Protocol</h4>
+          <p>Pre-ride briefings, emergency comms, first aid kits, and a support vehicle on all multi-day tours.</p>
+        </div>
+        <div class="wc rv">
+          <div class="wc-i"><i class="fas fa-motorcycle"></i></div>
+          <h4>Best Bikes for the Route</h4>
+          <p>We match the bike to the terrain. Every machine is prepped and tested for the specific route conditions.
+          </p>
+        </div>
+        <div class="wc rv">
+          <div class="wc-i"><i class="fas fa-utensils"></i></div>
+          <h4>Meals &amp; Camps Included</h4>
+          <p>From dal bhat at mountain teahouses to fire-cooked camp meals — food is always sorted on every tour.</p>
+        </div>
+        <div class="wc rv">
+          <div class="wc-i"><i class="fas fa-certificate"></i></div>
+          <h4>All Permits Handled</h4>
+          <p>TIMS cards, restricted area permits, ACAP passes — we handle all the paperwork before you ride.</p>
+        </div>
+        <div class="wc rv">
+          <div class="wc-i"><i class="fas fa-users"></i></div>
+          <h4>Small Groups Only</h4>
+          <p>Maximum 8–10 riders per tour. Small groups mean better guides, safer riding, and a richer experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs">
+      <div class="cg">
+        <div class="cl rv">
+          <div class="stag" style="color:var(--fire)">Plan Your Own</div>
+          <h2>Can't Find <em>Your</em> Ride?</h2>
+          <p>We build custom tours for individuals, couples, and groups of all sizes. Tell us your dream and we'll map
+            it out, choose the bikes, sort the permits, and ride with you.</p>
+          <a href="/HTML/contact.html" class="bp"><i class="fas fa-paper-plane"></i>Request Custom Tour</a>
+        </div>
+        <div class="rv">
+          <div class="csteps">
+            <div class="cst">
+              <div class="csn">1</div>
+              <div>
+                <h4>Tell Us Your Vision</h4>
+                <p>Drop a message with your route, dates, group size, and experience level.</p>
+              </div>
+            </div>
+            <div class="cst">
+              <div class="csn">2</div>
+              <div>
+                <h4>We Build the Plan</h4>
+                <p>Our team designs a day-by-day itinerary with bikes, accommodation, meals, and permits.</p>
+              </div>
+            </div>
+            <div class="cst">
+              <div class="csn">3</div>
+              <div>
+                <h4>Review &amp; Confirm</h4>
+                <p>We share the full plan. Adjust anything you like until it's exactly right.</p>
+              </div>
+            </div>
+            <div class="cst">
+              <div class="csn">4</div>
+              <div>
+                <h4>Ride &amp; Live It</h4>
+                <p>Show up, gear up, and let us handle everything else. Just ride.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta">
+      <div>
+        <h2>Book Your Adventure Today</h2>
+        <p>Limited spots per tour — secure yours before they fill up.</p>
+      </div><a href="/HTML/contact.html" class="bw"><i class="fas fa-calendar-check"></i>Book a Tour</a>
+    </div>
+  </main>
+  <footer>
+    <div class="fg">
+      <div class="fb rv"><a href="/index.html" class="logo"><i class="fas fa-motorcycle"
+            style="font-size:1.4rem"></i>Nepal Motorbike Rental Services</a>
+        <p>Nepal's premier dirtbike hire and adventure tour company.</p>
+        <div class="fso"><a href="https://www.facebook.com/people/Nepal-Motor-Bike-Tours-Travels/61578549223154/?rdid=8cX7n7ATaDz5udY1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BcRCTuYwh%2F" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nepalmotorbiketoursandtravels?igsh=bW44N3Rndnk0bmlp"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@nepalmotorbiketourstravels"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@nepal.motorbike.r"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/9779810048404" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+      </div>
+      <div class="fc rv">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="/index.html"><i class="fas fa-chevron-right"></i>Home</a></li>
+          <li><a href="/HTML/about.html"><i class="fas fa-chevron-right"></i>About</a></li>
+          <li><a href="/HTML/hirerates.html"><i class="fas fa-chevron-right"></i>Hire Rates</a></li>
+          <li><a href="/HTML/gallery.html"><i class="fas fa-chevron-right"></i>Gallery</a></li>
+          <li><a href="/HTML/tours.html"><i class="fas fa-chevron-right"></i>Tours</a></li>
+        </ul>
+      </div>
+      <div class="fc rv">
+        <h5>Tours</h5>
+        <ul>
+          <li><a href="#darjee"><i class="fas fa-chevron-right"></i>Darjeeling</a></li>
+          <li><a href="#mustang"><i class="fas fa-chevron-right"></i> Mustang</a></li>
+          <li><a href="#illam"><i class="fas fa-chevron-right"></i>Illam</a></li>
+          <li><a href="#chitwan"><i class="fas fa-chevron-right"></i>Chitwan Jungle</a></li>
+          <li><a href="#custom"><i class="fas fa-chevron-right"></i>Custom Tours</a></li>
+        </ul>
+      </div>
+      <div class="fc rv">
+        <h5>Contact</h5>
+        <div class="fci"><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/pErbHbFP9mcxVrda9"><span>Thamel, Kathmandu, Nepal</span> </a></div>
+        <div class="fci"><i class="fas fa-phone-alt"></i><a href="tel:+977 9810048404"><span>+977 9810048404</span></a>  <a href="tel: +977 9746420648"><span> +977 9746420648</span></a></div>
+        <div class="fci"><i class="fas fa-envelope"></i><span>nepalmotorbiketoursandtravels@gmail.com</span></div>
+      </div>
+    </div>
+    <div class="fb2">
+      <p>© 2025 Nepal Motorbike Rental Services. All rights reserved.</p>
+      <div class="fb2l"><a href="/HTML/PrivacyPolicy.html">Privacy</a><a href="/HTML/TermsConditions.html">Terms & Conditions</a></div>
+    </div>
+  </footer>
+  
+</body>
+
+</html>
