@@ -1,13 +1,15 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/HTML/home.html" },
+    { "source": "/", "destination": "/index.html" },
+
     { "source": "/about", "destination": "/HTML/about.html" },
+    { "source": "/contact", "destination": "/HTML/contact.html" },
+    { "source": "/faqs", "destination": "/HTML/faqs.html" },
+    { "source": "/gallery", "destination": "/HTML/gallery.html" },
     { "source": "/hirerates", "destination": "/HTML/hirerates.html" },
     { "source": "/tours", "destination": "/HTML/tours.html" },
-    { "source": "/gallery", "destination": "/HTML/gallery.html" },
-    { "source": "/faqs", "destination": "/HTML/faqs.html" },
-    { "source": "/contact", "destination": "/HTML/contact.html" },
-    { "source": "/PrivacyPolicy", "destination": "/HTML/PrivacyPolicy.html" },
-    { "source": "/TermsConditions", "destination": "/HTML/TermsConditions.html" }
+
+    { "source": "/privacy-policy", "destination": "/HTML/PrivacyPolicy.html" },
+    { "source": "/terms-conditions", "destination": "/HTML/TermsConditions.html" }
   ]
 }
