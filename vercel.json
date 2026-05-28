@@ -9,7 +9,8 @@
     { "source": "/hirerates", "destination": "/HTML/hirerates.html" },
     { "source": "/tours", "destination": "/HTML/tours.html" },
 
-    { "source": "/privacy-policy", "destination": "/HTML/PrivacyPolicy.html" },
+
     { "source": "/terms-conditions", "destination": "/HTML/TermsConditions.html" }
+    { "source": "/privacy-policy", "destination": "/HTML/privacyPolicy.html" }
   ]
 }
