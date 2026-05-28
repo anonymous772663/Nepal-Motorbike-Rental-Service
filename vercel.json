@@ -1,3 +1,7 @@
 {
+  "rewrites": [
+    { "source": "/about", "destination": "/HTML/about.html" },
+    { "source": "/contact", "destination": "/HTML/contact.html" }
+  ],
   "cleanUrls": true
 }
