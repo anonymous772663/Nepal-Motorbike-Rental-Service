@@ -10,7 +10,7 @@
     { "source": "/tours", "destination": "/HTML/tours.html" },
 
 
-    { "source": "/terms-conditions", "destination": "/HTML/TermsConditions.html" }
-    { "source": "/privacy-policy", "destination": "/HTML/privacyPolicy.html" }
+    { "source": "/terms-conditions", "destination": "/HTML/terms-conditions.html" }
+    { "source": "/privacy-policy", "destination": "/HTML/privacy-policy.html" }
   ]
 }
